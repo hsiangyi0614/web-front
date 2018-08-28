@@ -15,3 +15,13 @@ function showImages(el) {
 $(window).scroll(function() {
     showImages('.hid');
 });
+
+function showImages2(el) {
+    $(el).each(function() {
+        $(this).addClass("fadein2");
+    });
+}
+
+$(window).on("load", function() {
+    showImages2("#about-front");
+})

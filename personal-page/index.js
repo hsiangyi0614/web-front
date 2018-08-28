@@ -13,15 +13,18 @@ function showImages(el) {
 }
 
 $(window).scroll(function() {
-    showImages('.hid');
+    showImages('.hid1');
 });
 
 function showImages2(el) {
     $(el).each(function() {
+        $(this).removeClass("hid2");
         $(this).addClass("fadein2");
     });
 }
 
 $(window).on("load", function() {
-    showImages2("#about-front");
-})
+        // showImages2(".about-front");
+        // showImages2(".carousel-inner");
+        showImages2(".hid2");
+});

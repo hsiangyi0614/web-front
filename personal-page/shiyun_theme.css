@@ -67,6 +67,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #AAA;
 }
 
 .li1 {
@@ -102,7 +103,7 @@ li a{
 }
 
 li a:hover {
-    color: #555;
+    color: #444;
     text-decoration: none;
 }
 
@@ -148,7 +149,7 @@ li a:hover {
     text-align: center;
 }
 
-.hid {
+.hid1, .hid2 {
     visibility: hidden;
 }
 
@@ -169,6 +170,61 @@ li a:hover {
     100%{opacity: 1}
 }
 
-#about-front {
+.row .about-front {
     padding: 0;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.about-text-style {
+    text-align: center;
+    color: black;
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-block {
+    opacity: 0.6;
+    width: 65%;
+    height: 55%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-style {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.row .food-pad {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.about-img {
+    
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
 }

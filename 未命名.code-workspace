@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "personal-page"
+		},
+		{
+			"path": "/Users/chentingyi/Desktop/X-Village/x-village-web-js-course"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "personal-page"
+	}
+}

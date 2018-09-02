@@ -51,8 +51,10 @@ div .bg-img {
     text-align: center;
     color: white;
     font-size: 100px;
-    position: relative;
-    top: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .text_style2 {
@@ -123,10 +125,8 @@ li a:hover {
 }
 
 .footer {
+    
     background-color: #333;
-    position: bottom;
-    left: 0;
-    bottom: 0;
     width: 100%;
     height: 70px;
 }
@@ -204,11 +204,12 @@ li a:hover {
 }
 
 .about-text-style {
+    margin-bottom: 0px;
     width: 40%;
     height: 55%;
     font-family: serif;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     top: 0;
     right: 0;
@@ -237,8 +238,8 @@ li a:hover {
 
 .about-block {
     opacity: 0.6;
-    width: 65%;
-    height: 55%;
+    width: 55%;
+    height: 45%;
     background-color: white;
     position: absolute;
     top: 0;
@@ -308,7 +309,7 @@ li a:hover {
     background-color: white;
     opacity: 0.5;
     width: 55%;
-    height: 20%;
+    height: 21%;
     padding-left: 8px;
     padding-right: 4px;
     /* width: 20%;
@@ -324,8 +325,8 @@ li a:hover {
     margin: auto;
     background-color: white;
     opacity: 0.5;
-    width: 55%;
-    height: 24%;
+    width: 48%;
+    height: 17%;
     padding-left: 8px;
     padding-right: 4px;
     /* width: 20%;
@@ -397,8 +398,8 @@ li a:hover {
     margin-bottom: auto;
 }
 .intro_img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .intro_img2 {
@@ -407,7 +408,7 @@ li a:hover {
 }
 .intro_img3 {
     width: 100%;
-    height: 60%;
+    height: 100%;
 }
 .intro_text_layout {
     margin-top: 5%;
@@ -423,5 +424,12 @@ div .intro_img_layout {
 }
 
 div .intro_img_layout2 {
-    margin-top: -8%;
+    margin-top: -5%;
+}
+
+.home_map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }

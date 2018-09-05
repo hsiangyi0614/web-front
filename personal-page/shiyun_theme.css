@@ -6,8 +6,7 @@
 
 body {
     margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
+    overflow-x: hidden;
 }
 
 #bg-img1 {
@@ -93,7 +92,7 @@ div .bg-img {
     padding: 20px 40px;
     /* border-color: white;
     border-style: solid; */
-    background-color: #0b8a55;
+    ;
     /* color: #fff;
     letter-spacing: .05em;
     display: block;
@@ -133,14 +132,26 @@ li a:hover {
     height: 70px;
 }
 
+.img-fluid {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    padding-left:0;
+    padding-right: 0;
+
+}
 .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 300px;
     opacity: 0;
     transition: .5s ease;
     background-color: #FFFFFF;
@@ -265,7 +276,6 @@ li a:hover {
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;
 }
 
 .about-img {
@@ -287,6 +297,22 @@ li a:hover {
     height: 100%;
 }
 
+.bo_block_1 {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    margin: auto;
+    background-color: #844200;
+    width: 75px;
+    height: 300px;
+    color: white;
+    font-family: serif;
+    font-size: 50px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 4px;
+}
+
 .shiyun_block_1 {
     position: absolute;
     top: 80%;
@@ -303,6 +329,18 @@ li a:hover {
     letter-spacing: 4px;
 }
 
+.bo_block_2 {
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    margin: auto;
+    background-color: white;
+    opacity: 0.5;
+    width: 55%;
+    height: 21%;
+    padding-left: 8px;
+    padding-right: 4px;
+}
 .shiyun_block_2 {
     position: absolute;
     top: 13%;
@@ -356,6 +394,18 @@ li a:hover {
     text-orientation: upright; */
 }
 
+.bo_text_layout {
+    color: #000;
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    margin: auto;
+    width: 55%;
+    height: 19%;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
 .shiyun_text_layout {
     color: #000;
     position: absolute;
@@ -400,8 +450,8 @@ li a:hover {
     margin-bottom: auto;
 }
 .intro_img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 
 .intro_img2 {
@@ -445,8 +495,8 @@ div .intro_img_layout2 {
 
 .home_map4 {
     position: absolute;
-    top: 24.05%;
-    left: 60%;
+    top: 22.83%;
+    left: 58%;
     width: 8%;
 }
 
@@ -461,18 +511,19 @@ div .intro_img_layout2 {
     /* top: 48%;
     left: -15%; */
 
-    /* top: -14%;
-    left: 100%; */
+    top: -14%;
+    left: 100.5%;
 
-    animation: move;
-    animation-duration: 3s;
+    animation: movement;
+    animation-timing-function: linear;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-delay: 3s;
 }
 
-@keyframes move {
-    0%{top: -14; left: 100%}
-    100%{top: 48%; left: -15%}
+@keyframes movement {
+    0%{top: -14%; left: 100.5%}
+    100%{top: 47.1%; left: -15%}
 }
 
 .home_map6 {
@@ -484,7 +535,103 @@ div .intro_img_layout2 {
 
 .home_map7 {
     position: absolute;
-    top: 7.5%;
+    top: 5%;
+    left: 49.65%;
+    width: 7%;
+    animation: change_color;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-iteration-count: infinite;
+    animation-delay: 3s
+}
+
+.home_map9 {
+    position: absolute;
+    top: 5%;
+    left: 49.65%;
+    width: 7%;
+    animation: change_color;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-iteration-count: infinite;
+}
+
+.home_map8 {
+    position: absolute;
+    top: 5%;
     left: 49.65%;
     width: 7%;
 }
+
+@keyframes change_color {
+    0%{opacity: 1;}
+    50%{opacity: 1;}
+    51%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes change_color2 {
+    0%{opacity: 1;}
+    25%{opacity: 1;}
+    26%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+.home_map13 {
+    position: absolute;
+    top: -3.5%;
+    left: 65.5%;
+    width: 15%;
+}
+
+/* @keyframes walkanim {
+    to { background-position: 100% 0; }
+}
+@keyframes stroll {
+    from { transform: translate(-100%, 170%); }
+    to { transform: translate(2500%, 820%); }
+} 
+.walk-container {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    width: 5%;
+    padding-bottom: 8%; 
+    vertical-align: middle; 
+    overflow: hidden; 
+    animation: stroll 10s linear infinite;
+}
+.walk {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/walk-sequence.svg);
+    background-repeat: no-repeat;
+    background-size: 800%;
+    animation: walkanim 1s infinite steps(7);
+} */
+
+/* .animation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 58px;
+    height: 87px;
+    background-image: 
+    url(https://raw.githubusercontent.com/ferreirastudios/Ciclo-com-animation-e-keyframes/master/imagens/ciclo-animacao.png);
+    animation: walk-cycle 2.0s steps(8) infinite,
+    translate 8.0s ease-in infinite;
+}
+@keyframes walk-cycle {
+    0% { background-position: 0px; }
+    100% { background-position: -464px; }
+  }
+  
+  @keyframes translate {
+    0% { transform: translate(-58px, 0px); }
+    100% { transform: translate(464px, 464px); }
+  } */
